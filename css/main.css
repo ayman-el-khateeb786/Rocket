@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-color: rgb(190, 198, 206, 0.5);
+    --border-color: rgb(34, 60, 67);
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ***************************************************************** */
+/* start header */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 83px;
+    background-color: var(--main-color);
+    border-bottom: 2px solid #223C43;
+}
+
+.header .container {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    height: 55px;
+
+}
+
+.header .container .logo {
+    width: 200px;
+    height: 75px;
+    padding-top: 40px;
+}
+
+.header .container ul {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header .container ul li a {
+    text-decoration: none;
+    color: #223C43;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.container ul li:hover a {
+    color: #cc9626;
+    border-bottom: 1px solid #cc9626;
+    padding-bottom: 10px;
+}
+
+/* End header */
+
+/* start landing */
+.landing {
+    display: grid;
+    grid-template-columns: 20% auto;
+
+}
+
+.navgition {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+}
+
+.navgition ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+    justify-content: space-around;
+
+}
+
+.navgition ul li a {
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navgition ul li:hover a {
+    color: #cc9626;
+    border-bottom: 1px solid #cc9626;
+    padding-bottom: 10px;
+
+}
+
+
+.Interface {
+    height: calc(100vh - 83px);
+    background-image: url(../photo/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.Interface .text-Interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: var(--main-color);
+    padding: 15px;
+    color: rgba(34, 60, 67);
+}
+
+/* End landing */
+
+/* ************************************************************************ */
+
+/* START LOGIN pag */
+.landing-login {
+    background-image: linear-gradient(#223c43ad, rgb(24 41 41 / 67%)), url(../photo/landing.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.landing-login form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgb(34, 60, 67);
+    border-radius: 25px 25px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 230px;
+    background-color: #223c433b;
+}
+
+.login {
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(34, 60, 67);
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+form .inp {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inp input {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.inp input:hover {
+    background-color: rgba(34, 60, 67, 0.459);
+    color: white;
+}
+
+form .inp .sub:hover {
+    color: white;
+}
+
+form .inp .sub {
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ENd LOGIN pag */
+
+/* ********************************************************************************* */
+
+/* Start creat pag */
+
+.landing-create h1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-create {
+    padding: 20px;
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    border: 1px solid rgb(34, 60, 67);
+    border-radius: 15px;
+    background-color: var(--main-color);
+}
+
+/* full Name ***********************************/
+.form-create .full-name .title-1 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-create .full-name .control-name {
+    display: flex;
+    width: 600px;
+    margin-top: 10px;
+}
+
+.form-create .full-name .control-name input {
+    height: 30px;
+    width: 182px;
+}
+
+.form-create .full-name .control-name span {
+    margin-right: 20px;
+}
+
+.form-create .full-name .control-name label {
+    font-size: 12px;
+}
+
+/* email********************** */
+
+.form-create .email {
+    margin-top: 30px;
+}
+
+.form-create .email .title-2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-create .email input {
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+.form-create .email input::placeholder {
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* birth-date********************* */
+.form-create .birth-date {
+    margin-top: 30px;
+}
+
+.form-create .birth-date .title-3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.birth-date .control-date span {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    max-width: 300px;
+
+}
+
+.birth-date .control-date .day {
+    flex-direction: column;
+    width: 80px;
+    margin-top: 0;
+}
+
+.birth-date .control-date label {
+    width: 80px;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.birth-date .control-date span select {
+    width: 80px;
+
+}
+
+.form-create .sub {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-create .sub input {
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+
+
+/* End creat pag */
